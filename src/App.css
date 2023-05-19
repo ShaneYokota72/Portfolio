@@ -36,3 +36,145 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* sticky nav css */
+.stickynav{
+  position: fixed;
+  height: 5vh;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.stickynavbuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+  margin: 5vh auto;
+}
+.stickynavref{
+  text-decoration: none;
+  color: white;
+  
+  font-family: "Roboto Mono", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+}
+
+/* main page css */
+.mainparent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-position: center center;
+  background-size: cover;
+  background-image: url(./Images/MainBG.jpg);
+}
+
+.mainmyname{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 140px;
+  color: white;
+  margin: 0px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0,0,0,.3);
+}
+
+.maindescription{
+  color: white;
+  margin-top: 0px;
+  font-family: "Roboto Mono", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0,0,0,.3);
+}
+
+.sun1{
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 22.8vh;
+  left: 54.7vw;
+  border-radius: 90px;
+  box-shadow: inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400, inset -20px 0 30px #ff8a00, inset 20px 0 300px #be6dae, inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00, 10px 0 80px #f55;
+}
+
+.sun2{
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50vh;
+  left: 34.7vw;
+  border-radius: 90px;
+  box-shadow: inset 0 0 30px 0 #fff, inset 20px 0 30px #ffd400, inset -20px 0 30px #ff8a00, inset 20px 0 300px #be6dae, inset -20px 0 300px #e3ff4b, 0 0 50px #fff, -10px 0 100px #fbff00, 10px 0 80px #f55;
+}
+
+.headerimg{
+  width: 20vw;
+  padding: 4.5vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* about me section css */
+.aboutmeparent{
+  height: 80vh;
+  background-color: #1a191d;
+  padding: 10vh 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmetext{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 140px;
+  margin: 0 0 10vh 0;
+  text-align: center;
+}
+
+.aboutmedescription{
+  color: white;
+  font-family: "Roboto Mono", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0,0,0,.3);
+  margin: 35vh 5vh 10vh 5vh;
+}
+
+.shaneimg{
+  height: 50vh;
+  margin: 0 auto;
+  display: block;
+}
+/* #1a191d */
+/* skill section css */
+
+.skillparent{
+  height: 100vh;
+  background-color: #1a191d;
+}
