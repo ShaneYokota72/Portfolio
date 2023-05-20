@@ -18,6 +18,7 @@ function App() {
       <Projects />
       <Timeline />
       <Contact />
+      <h5 className="copyright">Copyright © Shane Yokota 2023</h5>
     </div>
   );
 }

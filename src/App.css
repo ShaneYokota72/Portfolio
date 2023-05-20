@@ -60,7 +60,7 @@ html {
 .stickynavref{
   text-decoration: none;
   color: white;
-  
+  text-shadow: 0 0 10px #f89b31;
   font-family: "Roboto Mono", Sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -241,6 +241,12 @@ html {
   margin-left: 2vw;
   text-align: center;
 }
+#skilltext1{
+  text-decoration: 5px underline #FF6B2B;
+}
+#skilltext2{
+  text-decoration: 5px underline #61dbfb;
+}
 .skilldescription{
   display: flex;
   padding: 0vh 4vh;
@@ -348,6 +354,8 @@ html {
 .projectgal{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10vw;
   /* align-content: space-around;
   justify-content: space-evenly; */
 }
@@ -379,7 +387,7 @@ html {
 .projcard:hover .projcardimg {
   transform: scale(1.05);
 }
-.projcardmostrec:hover .projcardimg {
+.projcardmostrec:hover .projcardimgrec {
   transform: scale(1.05);
 }
 .indprojdesc{
@@ -403,9 +411,18 @@ html {
   letter-spacing: 1.1px;
   text-align: center;
 }
+.projcardimgrec{
+  max-height: 70%;
+  max-width: 100%;
+  background-color: antiquewhite;
+  border-radius: 5px 5px 0 0;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
 .projcardimg{
   max-height: 70%;
   max-width: 100%;
+  aspect-ratio: 16/9;
   background-color: antiquewhite;
   border-radius: 5px 5px 0 0;
   transition: transform 0.3s ease;
@@ -516,9 +533,9 @@ html {
   margin-right: 50px;
 }
 .accordion-item.active .accordion-content {
-  /* display: block; */
   padding: 20px;
   height: auto;
+  transition: cubic-bezier(0, 0.55, 1, 0.87) 0.8s;
 }
 .worktopics{
   display: flex;
@@ -603,4 +620,17 @@ html {
 }
 .socialicon:hover{
   color: #ac6cebde;
+}
+.copyright{
+  color: white;
+  font-family: "Roboto Mono", Sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0,0,0,.3);
+  text-align: center;
+  margin-top: -33px;
 }
