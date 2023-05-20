@@ -11,7 +11,6 @@ import ECommerce from '../Images/ECommerce.jpeg'
 import StreamingService from '../Images/StreamingService.jpeg'
 
 import Indproj from "./Indproj";
-import { Link } from "react-router-dom";
 
 export default function Projects(){
     return(
