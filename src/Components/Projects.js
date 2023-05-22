@@ -20,7 +20,7 @@ export default function Projects(){
             <div className="projtoprow">
                 <div className="projtopleft">
                     <h1 className="Projecttitle">Projects</h1>
-                    <p className="Projdesc">Here you can see some of the projects I've done on my own time. See my <a href="https://github.com/ShaneYokota72" target="_blank" className="githublink">GitHub</a> for more projects in detail. This is also most likely not up to date like most personal websites.</p>
+                    <p className="Projdesc">Here you can see some of the projects I've done on my own time. See my <a href="https://github.com/ShaneYokota72" target="_blank" rel="noreferrer" className="githublink">GitHub</a> for more projects in detail. This is also most likely not up to date like most personal websites.</p>
                 </div>
                 <div className="projtopright" style={{width:"54vw"}}>
                     <h1 className="Projecttitlemostrec">My Latest Project</h1>

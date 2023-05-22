@@ -39,9 +39,9 @@ export default function SMProjectpopup(props){
                     In addition to the basic functionalities, this application also has several features that removes emotions from the application such as minimalistic design and emotion removal from posts and comments.This is done to prevent reality and fantasy unbalance shown in every social media these days.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/td-usc/socio-media" target="_blank">Socio-Media</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/td-usc/socio-media" target="_blank" rel="noreferrer">Socio-Media</a>
                     <br></br>
-                    Visit Socio-Media: <a className="links" href="https://socio-media.netlify.app/" target="_blank">Socio-Media</a>
+                    Visit Socio-Media: <a className="links" href="https://socio-media.netlify.app/" target="_blank" rel="noreferrer">Socio-Media</a>
                     </p>
 
                 </div>

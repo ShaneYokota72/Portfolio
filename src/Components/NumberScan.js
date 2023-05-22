@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from "react";
+import React, {useRef} from "react";
 import '../App.css';
 
 import { Link } from "react-router-dom";
@@ -66,9 +66,9 @@ class DigitBlob{
         this.#VHline();
         this.#calc_corners();
 
-        if(this.#euler_ == 1){
+        if(this.#euler_ === 1){
             this.#digit_ = '8';
-        } else if(this.#euler_ == 0){
+        } else if(this.#euler_ === 0){
             if(this.#vsym > 0.8 && this.#hsym > 0.8){
                 this.#digit_ = '0';
             } else if(this.#lefttoright > 1.18){// 1.3 or 1.5
@@ -82,7 +82,7 @@ class DigitBlob{
                 // 6
                 this.#digit_ = '6';
             }
-        } else if(this.#euler_ == -1){
+        } else if(this.#euler_ === -1){
             // 1 2 3 5 7 
             // botHline => 1 or 2
             // topHline => 5 or 7
@@ -113,7 +113,7 @@ class DigitBlob{
             }
         }
 
-        if(this.#digit_ == '!'){
+        if(this.#digit_ === '!'){
             this.#digit_ = '9';
         }
 
@@ -134,25 +134,25 @@ class DigitBlob{
                 let b3 = this.#img_[bqcheck.row+1][bqcheck.col];
                 let b4 = this.#img_[bqcheck.row+1][bqcheck.col+1];
                 // check which bq it is and add 1 to the matching bq
-                if(b1+b2+b3+b4 == 255*4){
+                if(b1+b2+b3+b4 === 255*4){
                     //0 bloc is balck(all white)
                     this.#bq0_++;
-                } else if(b1+b2+b3+b4 == 255*3){
+                } else if(b1+b2+b3+b4 === 255*3){
                     //1 bloc is balck
                     this.#bq1_++;
-                } else if(b1+b2+b3+b4 == 255*2){
+                } else if(b1+b2+b3+b4 === 255*2){
                     //2 block is black
-                    if(b1 == b4){
+                    if(b1 === b4){
                         //bqd
                         this.#bqd_++;
                     } else {
                         //bq2
                         this.#bq2_++;
                     }
-                } else if(b1+b2+b3+b4 == 255*1){
+                } else if(b1+b2+b3+b4 === 255*1){
                     //3 block is black
                     this.#bq3_++;
-                } else if(b1+b2+b3+b4 == 0){
+                } else if(b1+b2+b3+b4 === 0){
                     //4 block is black
                     this.#bq4_++;
                 }
@@ -169,7 +169,7 @@ class DigitBlob{
 
         for(let i=0; i<this.#h_ - 1; i++){
             for(let j=0; j<this.#w_ - 1; j++){
-                if(this.#img_[this.#ul_.row + i][this.#ul_.col + j] == 0){
+                if(this.#img_[this.#ul_.row + i][this.#ul_.col + j] === 0){
                     this.#totalblack++;
                     this.#vcentroid+=j;
                     this.#hcentroid+=i;
@@ -183,7 +183,7 @@ class DigitBlob{
         let vmatch=0;
         for(let i = 0; i<this.#h_; i++){
             for(let j=0; j < this.#w_*0.45 ; j++){
-                if (this.#img_[(this.#ul_).row + i][(this.#ul_.col) + j] == this.#img_[(this.#ul_).row + i][(this.#ul_).col + this.#w_ -1 -j]){
+                if (this.#img_[(this.#ul_).row + i][(this.#ul_.col) + j] === this.#img_[(this.#ul_).row + i][(this.#ul_).col + this.#w_ -1 -j]){
                     vmatch++;
                 }
             }
@@ -195,7 +195,7 @@ class DigitBlob{
         let hmatch = 0;
         for(let i = 0; i<this.#h_*0.45; i++){
             for(let j=0; j < this.#w_ ; j++){
-                if (this.#img_[(this.#ul_).row + i][(this.#ul_.col) + j] == this.#img_[(this.#ul_).row + this.#h_ - 1 - i][(this.#ul_).col + j]){
+                if (this.#img_[(this.#ul_).row + i][(this.#ul_.col) + j] === this.#img_[(this.#ul_).row + this.#h_ - 1 - i][(this.#ul_).col + j]){
                     hmatch++;
                 }
             }
@@ -209,7 +209,7 @@ class DigitBlob{
 
     } */
     #calc_corners(){
-        this.#righttopblack = (this.#img_[(this.#ul_).row][(this.#ul_).col + this.#w_ -1] == 0 );
+        this.#righttopblack = (this.#img_[(this.#ul_).row][(this.#ul_).col + this.#w_ -1] === 0 );
     }
     /* #calc_vert_lines(){
 
@@ -220,7 +220,7 @@ class DigitBlob{
         let rightblack = 0;
         for(let i=(this.#ul_).row; i<(this.#ul_).row+this.#h_-1; i++){
             for(let j=(this.#ul_).col; j <(this.#ul_).col+this.#w_-1; j++){
-                if(this.#img_[i][j] == 0){
+                if(this.#img_[i][j] === 0){
                     if(j< ((this.#ul_).col + ((this.#w_-1)/2) - this.#w_*0.1)){
                         leftblack++;
                     } else if(j>=((this.#ul_).col + ((this.#w_-1)/2) + this.#w_*0.1)){
@@ -237,7 +237,7 @@ class DigitBlob{
         let botblack = 0;
         for(let i=(this.#ul_).row; i<(this.#ul_).row+this.#h_-1; i++){
             for(let j=(this.#ul_).col; j <(this.#ul_).col+this.#w_-1; j++){
-                if(this.#img_[i][j] == 0){
+                if(this.#img_[i][j] === 0){
                     if(i<((this.#ul_).row + ((this.#h_-1)/2) - this.#h_*0.1)){
                         topblack++;
                     } else if(i>=((this.#ul_).row + ((this.#h_-1)/2) + this.#h_*0.1)){
@@ -256,7 +256,7 @@ class DigitBlob{
                 if(this.#Hline){
                     break;
                 }
-                if(this.#img_[i][j] == 0){
+                if(this.#img_[i][j] === 0){
                     Htest++;
                 }
             }
@@ -277,7 +277,7 @@ class DigitBlob{
                 if(this.#Vline){
                     break;
                 }
-                if(this.#img_[i][j] == 0){
+                if(this.#img_[i][j] === 0){
                     Vtest++;
                 }
             }
@@ -294,10 +294,10 @@ class DigitBlob{
             for(let i=(this.#ul_).row;i<(this.#ul_).row + this.#h_ -1; i++){
                 if(this.#halfHline){
                     break;
-                } else if(this.#img_[i][j] == 0){
+                } else if(this.#img_[i][j] === 0){
                     starthalfV = true;
                     halfVtest++;
-                } else if(starthalfV && this.#img_[i][j] == 255){
+                } else if(starthalfV && this.#img_[i][j] === 255){
                     break;
                 }
             }
@@ -313,10 +313,10 @@ class DigitBlob{
             for(let j=(this.#ul_).col;j<(this.#ul_).col + this.#w_ -1; j++){
                 if(this.#halfHline){
                     break;
-                } else if(this.#img_[i][j] == 0){
+                } else if(this.#img_[i][j] === 0){
                     starthalfH = true;
                     halfHtest++;
-                } else if(starthalfH && this.#img_[i][j] == 255){
+                } else if(starthalfH && this.#img_[i][j] === 255){
                     break;
                 }
             }
@@ -403,7 +403,7 @@ class NumImg{
         //run through the image and check for a black pixel, then run BFS
         for (let i=0; i<this.#h_; i++){
             for(let j=0; j<this.#w_; j++){
-                if((this.#img_[i][j] == 0) && (this.#visited[i][j] == false)){
+                if((this.#img_[i][j] === 0) && (this.#visited[i][j] === false)){
                     // do the BFS search
                     let goingtoadd = new DigitBlob(-1,-1);
                     goingtoadd = this.#createDigitBlob(this.#visited, i, j);
@@ -464,11 +464,11 @@ class NumImg{
         this.#visited[pr][pc] = true;
         let start = new Location(pr,pc);
         loc.push(start);
-        while(loc.length != 0){
+        while(loc.length !== 0){
             let temp = loc[0];
             for(let i=0; i<8; i++){
                 // console.log(this.#img_);
-                if((this.#img_[temp.row+neighbor_row[i]][temp.col+neighbor_col[i]] == 0) && (this.#visited[temp.row+neighbor_row[i]][temp.col+neighbor_col[i]] == false)){
+                if((this.#img_[temp.row+neighbor_row[i]][temp.col+neighbor_col[i]] === 0) && (this.#visited[temp.row+neighbor_row[i]][temp.col+neighbor_col[i]] === false)){
                     this.#visited[temp.row+neighbor_row[i]][temp.col+neighbor_col[i]] = true;
                     let addthis = new Location (temp.row+neighbor_row[i], temp.col+neighbor_col[i]);
                     loc.push(addthis);
@@ -599,7 +599,7 @@ export default function NumberScan(props){
                     The classification is done by using all the values calculated in the digit pixel calculations.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/NumberScan.js" target="_blank">NumberScan</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/NumberScan.js" target="_blank" rel="noreferrer">NumberScan</a>
                     </p>
 
                 </div>

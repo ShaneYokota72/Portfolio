@@ -41,7 +41,7 @@ export default function StreamService(props){
                     During the suggestion process, the program utilizes bipartite graph created with all users and content data to analyze the user's history and suggest similar content.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Streaming-Service" target="_blank">Streaming Service</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Streaming-Service" target="_blank" rel="noreferrer">Streaming Service</a>
                     </p>
 
                 </div>

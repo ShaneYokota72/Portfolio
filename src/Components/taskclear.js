@@ -58,9 +58,9 @@ export default function Taskclear(props){
                         </svg> The collaboration feature allows the user to share their tasks with other users and work on the same task together.
                     <br></br>
                     <br></br>
-                    Visit task.clear: <a className="links" href="https://taskclear.vercel.app" target="_blank">task.clear</a>
+                    Visit task.clear: <a className="links" href="https://taskclear.vercel.app" target="_blank" rel="noreferrer">task.clear</a>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/task.clear" target="_blank">task.clear</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/task.clear" target="_blank" rel="noreferrer">task.clear</a>
                     </p>
 
                 </div>

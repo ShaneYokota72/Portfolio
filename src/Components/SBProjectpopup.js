@@ -44,7 +44,7 @@ export default function SBProjectpopup(props){
                     It then compares the predicted value at the next game with a provided threshold to suggest whether to bet above, below, or abstain from betting, enabling users to make more data-driven choices in NBA sports betting.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/SportsBetting-Assist" target="_blank">Sports Betting Helper</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/SportsBetting-Assist" target="_blank" rel="noreferrer">Sports Betting Helper</a>
                     </p>
 
                 </div>

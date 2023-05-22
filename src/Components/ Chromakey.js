@@ -148,11 +148,11 @@ export default function Chromakey(props){
                     <div style={{display: "flex", gap: "50px"}}>
                         <div>   
                             <h4 className="explanationp">Sample foreground</h4>
-                            <img className="chromakeysampleimg" src={astro}></img>
+                            <img className="chromakeysampleimg" alt="sample_image" src={astro}></img>
                         </div>
                         <div>
                             <h4 className="explanationp">Sample backgruond</h4>
-                            <img className="chromakeysampleimg" src={space}></img>
+                            <img className="chromakeysampleimg" alt="sample_image" src={space}></img>
                         </div>
                     </div>
                     
@@ -191,7 +191,7 @@ export default function Chromakey(props){
                     If the distance is less than a threshold, I replace the pixel with the corresponding pixel in the background image. Otherwise, I keep the pixel in the foreground image.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/%20Chromakey.js" target="_blank">Chromakey</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/%20Chromakey.js" target="_blank" rel="noreferrer">Chromakey</a>
                     </p>
 
                 </div>

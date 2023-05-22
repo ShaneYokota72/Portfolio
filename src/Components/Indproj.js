@@ -1,7 +1,6 @@
 import React from "react";
 import '../App.css'
 
-import taskclearimg from '../Images/taskclear.png'
 export default function Indproj(props){
     return(
         <div className="projcard">
