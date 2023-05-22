@@ -599,7 +599,7 @@ export default function NumberScan(props){
                     The classification is done by using all the values calculated in the digit pixel calculations.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/hw2" target="_blank">NumberScan</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/NumberScan.js" target="_blank">NumberScan</a>
                     </p>
 
                 </div>

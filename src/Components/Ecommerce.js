@@ -35,7 +35,7 @@ export default function Ecommerce(props){
                     In addition to the functionalities, to ensure that the program can handle a large number of data with no problem,   the program time efficiency was optimized by implementing efficient data structure and algorithms.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/hw2" target="_blank">E-Commerce Terminal Service</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Ecommerce-Service" target="_blank">E-Commerce Terminal Service</a>
                     </p>
 
                 </div>

@@ -44,7 +44,7 @@ export default function MazeSearch(props){
                     This C++ program solves mazes by finding the fastest possible route from the start position to the end position. The program utilize a Breath First Search algorithm to traverse the maze and ensures the fastest path.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/hw2" target="_blank">Maze Search</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Maze-Solver" target="_blank">Maze Search</a>
                     </p>
 
                 </div>

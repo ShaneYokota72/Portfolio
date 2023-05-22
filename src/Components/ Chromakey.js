@@ -191,7 +191,7 @@ export default function Chromakey(props){
                     If the distance is less than a threshold, I replace the pixel with the corresponding pixel in the background image. Otherwise, I keep the pixel in the foreground image.
                     <br></br>
                     <br></br>
-                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/hw2" target="_blank">Chromakey</a>
+                    View this project on GitHub: <a className="links" href="https://github.com/ShaneYokota72/Portfolio/blob/main/src/Components/%20Chromakey.js" target="_blank">Chromakey</a>
                     </p>
 
                 </div>
