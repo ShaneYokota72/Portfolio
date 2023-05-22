@@ -10,6 +10,8 @@ import SocioMedia from '../Images/SocioMedia.png'
 import ECommerce from '../Images/ECommerce.jpeg'
 import StreamingService from '../Images/StreamingService.jpeg'
 
+import { Link } from "react-router-dom";
+
 import Indproj from "./Indproj";
 
 export default function Projects(){
@@ -22,28 +24,43 @@ export default function Projects(){
                 </div>
                 <div className="projtopright" style={{width:"54vw"}}>
                     <h1 className="Projecttitlemostrec">My Latest Project</h1>
-                    <div className="projcardmostrec">
-                        <div style={{overflow: "hidden"}}>
-                            <img src={taskclearimg} alt="taskclearimg" className="projcardimgrec"></img>
+                    <Link to="/project:taskclear" className="projlinkrec" style={{textDecoration:"none"}}>
+                        <div className="projcardmostrec">
+                            <div style={{overflow: "hidden"}}>
+                                <img src={taskclearimg} alt="taskclearimg" className="projcardimgrec"></img>
+                            </div>
+                            <div className="indprojdesc">
+                                <h1 className="indprejdesctexth1">Task Clear</h1>
+                                <p className="indprejdesctextp">Web Dev / Full Stack Dev</p>
+                            </div>
                         </div>
-                        <div className="indprojdesc">
-                            <h1 className="indprejdesctexth1">Task Clear</h1>
-                            <p className="indprejdesctextp">Web Dev / Full Stack Dev</p>
-                        </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
 
             <div className="projectgal">
-                <Indproj projimg={Sportsbettingimg} projname= "Sports Betting Helper" projcat= "Software Development"></Indproj>
-                <Indproj projimg={SocioMedia} projname= "Socio-Media" projcat= "Web Dev / Full Stack Dev"></Indproj>
-                <Indproj projimg={ECommerce} projname= "E-Commerce Service" projcat= "Terminal Application"></Indproj>
-                <Indproj projimg={StreamingService} projname= "Streaming Service" projcat= "Terminal Application"></Indproj>
-                <Indproj projimg={OCRimg} projname= "NumberScan" projcat= "Algorithm Design / Software Development"></Indproj>
-                <Indproj projimg={Chrommkeyimg} projname= "ChromaKey" projcat= "Image Processing / Software Engineering"></Indproj>
-                <Indproj projimg={Mazesearchimg} projname= "MazeSearch" projcat= "Algorithm Design / Software Development"></Indproj>
+                <Link to="/project:SportsBettingHelper" className="projlink">
+                    <Indproj projimg={Sportsbettingimg} projname= "Sports Betting Helper" projcat= "Software Development"></Indproj>
+                </Link>
+                <Link to="/project:SocioMedia" className="projlink">
+                    <Indproj projimg={SocioMedia} projname= "Socio-Media" projcat= "Web Dev / Full Stack Dev"></Indproj>
+                </Link>
+                <Link to="/project:Ecommerce" className="projlink">
+                    <Indproj projimg={ECommerce} projname= "E-Commerce Service" projcat= "Terminal Application"></Indproj>
+                </Link>
+                <Link to="/project:StreamingService" className="projlink">
+                    <Indproj projimg={StreamingService} projname= "Streaming Service" projcat= "Terminal Application"></Indproj>
+                </Link>
+                <Link to="/project:NumberScan" className="projlink">
+                    <Indproj projimg={OCRimg} projname= "NumberScan" projcat= "Computer Vision / Algorithm Design / Software Development"></Indproj>
+                </Link>
+                <Link to="/project:Chromakey" className="projlink">
+                    <Indproj projimg={Chrommkeyimg} projname= "ChromaKey" projcat= "Image Processing / Software Engineering"></Indproj>
+                </Link>
+                <Link to="/project:Mazesearch" className="projlink">
+                    <Indproj projimg={Mazesearchimg} projname= "MazeSearch" projcat= "Algorithm Design / Software Development"></Indproj>
+                </Link>
             </div>
-           
         </div>
     )
 }

@@ -62,7 +62,7 @@ export default function Timeline() {
                         <p>Postman</p>
                     </div>
                 </div>
-                <img src={Dreamcoatlogo} className="compimg"></img>
+                <img src={Dreamcoatlogo} className="compimg" alt="companylogo"></img>
             </div>
         </div>
         <div
@@ -104,7 +104,7 @@ export default function Timeline() {
                         <p>JS</p>
                     </div>
                 </div>
-                <img src={BPMlogo} className="compimg" style={{borderRadius: "0"}}></img>
+                <img src={BPMlogo} className="compimg" alt="companylogo" style={{borderRadius: "0"}}></img>
             </div>
         </div>
         <div
@@ -147,7 +147,7 @@ export default function Timeline() {
                         <p>Python</p>
                     </div>
                 </div>
-                <img src={USClogo} className="compimg"></img>
+                <img src={USClogo} className="compimg" alt="companylogo"></img>
             </div>
         </div>
       </div>
