@@ -11,7 +11,7 @@ export default function Contact(){
             <div className="contactright">
                 <div className="contactinfo">
                     <a className="socialicon" href="mailto:shaneyok@usc.edu">shaneyok@usc.edu</a>
-                    <a className="socialicon" href="tel:7859178723">785-917-8723</a>
+                    {/* <a className="socialicon" href="tel:7859178723">785-917-8723</a> */}
                 </div>
                 <div id="socialiconcontectme">
                     <a className="socialicon" href="https://www.linkedin.com/in/shaneyok/" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
