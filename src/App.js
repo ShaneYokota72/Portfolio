@@ -17,10 +17,11 @@ import MazeSearch from './Components/MazeSearch';
 import Taskclear from './Components/taskclear';
 
 import { Routes, Route, Outlet } from 'react-router-dom';
+import DevMesh from './Components/Devmesh';
 
 function Home(){
   return(
-    <div>
+    <div className='apppage'>
       <StickyNav />
       <Mainpage />
       <Aboutme />
@@ -46,6 +47,7 @@ function App() {
           <Route path="/project:NumberScan" element={<NumberScan />}></Route>
           <Route path="/project:Chromakey" element={<Chromakey />}></Route>
           <Route path="/project:Mazesearch" element={<MazeSearch />}></Route>
+          <Route path="/project:devmesh" element={<DevMesh />}></Route>
         </Route>
       </Routes>
       

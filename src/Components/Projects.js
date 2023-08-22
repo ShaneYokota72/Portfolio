@@ -9,6 +9,7 @@ import Sportsbettingimg from '../Images/sportsbetting.jpeg'
 import SocioMedia from '../Images/SocioMedia.png'
 import ECommerce from '../Images/ECommerce.jpeg'
 import StreamingService from '../Images/StreamingService.jpeg'
+import devMesh from '../Images/Devmesh.png'
 
 import { Link } from "react-router-dom";
 
@@ -22,16 +23,16 @@ export default function Projects(){
                     <h1 className="Projecttitle">Projects</h1>
                     <p className="Projdesc">Here you can see some of the projects I've done on my own time. See my <a href="https://github.com/ShaneYokota72" target="_blank" rel="noreferrer" className="githublink">GitHub</a> for more projects in detail. This is also most likely not up to date like most personal websites.</p>
                 </div>
-                <div className="projtopright" style={{width:"54vw"}}>
+                <div className="projtopright">
                     <h1 className="Projecttitlemostrec">My Latest Project</h1>
-                    <Link to="/project:taskclear" className="projlinkrec" style={{textDecoration:"none"}}>
+                    <Link to="/project:devmesh" className="projlinkrec" style={{textDecoration:"none"}}>
                         <div className="projcardmostrec">
                             <div style={{overflow: "hidden"}}>
-                                <img src={taskclearimg} alt="taskclearimg" className="projcardimgrec"></img>
+                                <img src={devMesh} alt="devmeshimg" className="projcardimgrec"></img>
                             </div>
                             <div className="indprojdesc">
-                                <h1 className="indprejdesctexth1">Task Clear</h1>
-                                <p className="indprejdesctextp">Web Dev / Full Stack Dev</p>
+                                <h1 className="indprejdesctexth1">DevMesh</h1>
+                                <p className="indprejdesctextp">Full Stack Application</p>
                             </div>
                         </div>
                     </Link>
@@ -39,6 +40,9 @@ export default function Projects(){
             </div>
 
             <div className="projectgal">
+                <Link to="/project:taskclear" className="projlink">
+                    <Indproj projimg={taskclearimg} projname= "TaskClear" projcat= "Web Dev / Full Stack Dev"></Indproj>
+                </Link>
                 <Link to="/project:SportsBettingHelper" className="projlink">
                     <Indproj projimg={Sportsbettingimg} projname= "Sports Betting Helper" projcat= "Software Development"></Indproj>
                 </Link>

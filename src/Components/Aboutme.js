@@ -6,6 +6,7 @@ import USClogo from '../Images/USClogo.png'
 import Cocalogo from '../Images/cocalogo.jpeg'
 import Dreamcoatlogo from '../Images/Dreamcoatlogo.jpeg'
 import Bluepanthermedialogo from '../Images/bluepanthermedialogo.jpeg'
+import EZread from '../Images/EZread.jpeg'
 
 export default function Aboutme(){
     return(
@@ -27,6 +28,7 @@ export default function Aboutme(){
                 <img src={Cocalogo} alt="complogo" className="logos"></img>
                 <img src={Bluepanthermedialogo} alt="complogo" className="logos"></img>
                 <img src={Dreamcoatlogo} alt="complogo" className="logos"></img>
+                <img src={EZread} alt="complogo" className="logos"></img>
             </div>
         </div>
     )

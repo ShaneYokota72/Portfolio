@@ -41,6 +41,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.apppage::-webkit-scrollbar {
+  display: none;
+}
+
 /* sticky nav css */
 .stickynav{
   position: fixed;
@@ -219,7 +223,7 @@ html {
 
 .skillssection{
   display: flex;
-  height: 40vh;
+  height: 46.5vh;
   margin: 0 auto;
   justify-content: center;
 }
@@ -227,7 +231,7 @@ html {
 .skillsubsection{
   border: 1px solid white;
   width: 25vw;
-  height: 40vh;
+  height: 46.5vh;
   /* padding: 3vh; */
 }
 
@@ -296,7 +300,7 @@ html {
   justify-content: space-evenly;
   align-items: center;
   height: 10vh;
-  width: 80vw;
+  width: 50vw;
   position: relative;
   top: -20vh;
   flex-wrap: wrap;
@@ -323,6 +327,7 @@ html {
 .projtoprow{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .projtopleft{
   width: 36vw;
@@ -340,7 +345,7 @@ html {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 35px;
-  margin: auto 50px auto 100px;
+  margin: auto 0 auto 50px;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
   white-space: nowrap;
@@ -663,6 +668,9 @@ html {
   border: 1px solid #ac6cebde;
 
   overflow: scroll;
+}
+.projectpopup::-webkit-scrollbar {
+  display: none;
 }
 
 .projectpopuptitle{
