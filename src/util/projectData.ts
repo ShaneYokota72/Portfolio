@@ -49,7 +49,7 @@ export const projectData: projectmetadata = {
         description: ["Devmesh is a collaborative cloud platform for all developers. It features such as collaborative room create/join, reamtime code editing/messaging, public/private room setting, and free code storage.", "It is a full stack application built with React, Node.js, Express.js, MongoDB, and Socket.io, and it is hosted on Vercel and AWS-EC2."],
         link: "https://devmesh.vercel.app/",
         github: "https://github.com/ShaneYokota72/DevMesh-FrontEnd",
-        image: ["/DevmeshDemo1.jpg", "/DevmeshDemo2.jpg"]
+        image: ["/dmesh_1.jpg", "/dmesh_2.jpg"]
     }
     ,
     taskclear: 

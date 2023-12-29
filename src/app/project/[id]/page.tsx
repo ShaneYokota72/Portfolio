@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {projectData} from '@/util/projectData'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title  : 'Projects - Shane Yokota',
+     description: "Shane Yokota's Projects",
+}
+
 
 export default function page({ params }: { params: { id: string } }) {
     const data = projectData[params.id]
