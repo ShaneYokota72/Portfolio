@@ -1,5 +1,11 @@
 import ExperienceComponent from '@/components/ExperienceComponent'
 import React from 'react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Experience - Shane Yokota',
+  description: "Shane Yokota's Experiences",
+}
 
 export default function page() {
   return (
