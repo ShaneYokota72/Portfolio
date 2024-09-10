@@ -1,8 +1,8 @@
 interface Project {
-    title: string;
-    description: string;
-    thumbImage: string;
-    sublink: string;
+    name: string;
+    description: string[];
+    image: string;
+    links: Record<string, string>;
 }
 
 interface ProjectData {
@@ -16,28 +16,65 @@ interface ProjectData {
 
 export const projectArray: Project[] = [
     {
-        title: "DevMesh",
-        description: "Collaborative cloud platform for all developers to edit codes together",
-        thumbImage: "/Devmesh.jpg",
-        sublink: "devmesh",
+        name: "Tacer",
+        description: ["One click job application tracker(Chrome extension)."],
+        image: "/TacerProject.png",
+        links: {
+            'Chrome Web Store': "https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf"
+        }
     },
     {
-        title: "Task-Clear",
-        description: "This is to-do app with several other features that helps the user clear out their task faster and more efficiently",
-        thumbImage: "/taskclear.jpg",
-        sublink: "taskclear",
+        name: "Tinker",
+        description: ["Mobile app simplifying property management for landlords."],
+        image: "/TinkerProject.png",
+        links: {
+            'Pitch Deck': "https://www.figma.com/proto/IvQxyZJCGeXyFHwF3luDuc/Lava-Decks?node-id=545-10575&node-type=canvas&t=oziPgY4thpZfrjCW-1&scaling=contain&content-scaling=fixed&page-id=545%3A10574&starting-point-node-id=545%3A10575"
+        }
     },
     {
-        title: "Sports Betting Helper",
-        description: "This program helps users with sports betting after analyzing the past game statistics",
-        thumbImage: "/sportsbetting.jpeg",
-        sublink: "sportsbetting",
+        name: "Med2Meals",
+        description: ["Service linking users with local chefs for personalized, health-focused meals.", "🏆1st place CrossMint Prize @ TreeHacks24."],
+        image: "/Med2MealsProject.jpg",
+        links: {
+            'Github': "https://github.com/ShaneYokota72/Med2Meals",
+            'Devpost': "https://devpost.com/software/nourish-connect"
+        },
     },
     {
-        title: "Number Scan",
-        description: "This is a numberscanner, which is a program that is able to detect and recognize the numbers in images just like when you scan a giftcard!",
-        thumbImage: "/NumScanImage.jpg",
-        sublink: "numberscan",
+        name: "DevMesh",
+        description: ["Collaborative cloud platform for all developers to edit codes together"],
+        image: "/Devmesh.jpg",
+        links: {
+            'Github': "https://github.com/ShaneYokota72/DevMesh-FrontEnd",
+            'Website': "https://devmesh.vercel.app/"
+        },
+    },
+    {
+        name: "Task-Clear",
+        description: ["This is to-do app with several other features that helps the user clear out their task faster and more efficiently"],
+        image: "/taskclear.jpg",
+        links: {
+            'Github': "https://github.com/ShaneYokota72/task.clear",
+            'Website': ""
+        },
+    },
+    {
+        name: "Sports Betting Helper",
+        description: ["This program helps users with sports betting after analyzing the past game statistics"],
+        image: "/sportsbetting.jpeg",
+        links: {
+            'Github': "",
+            'Website': ""
+        },
+    },
+    {
+        name: "Number Scan",
+        description: ["This is a numberscanner, which is a program that is able to detect and recognize the numbers in images just like when you scan a giftcard!"],
+        image: "/NumScanImage.jpg",
+        links: {
+            'Github': "",
+            'Website': ""
+        },
     }
 ]
 

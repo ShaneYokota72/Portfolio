@@ -1,13 +1,16 @@
-import Image from 'next/image'
-import Link from 'next/link'
+"use client"
 import React from 'react'
-import FooterLink from './FooterLink'
+import FooterIcon from '@/components/FooterIcon'
 
 export default function Footer() {
   return (
-    <div className='flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full'>
-        <FooterLink href="https://www.linkedin.com/in/shaneyok/" iconlink="/LinkedinIcon.svg" title="@shaneyok"/>
-        <FooterLink href="https://github.com/ShaneYokota72" iconlink="/github_logo.svg" title="@ShaneYokota72"/>
+    <div className='fixed bottom-4 left-0 right-0 flex justify-center'>
+      <div className='flex items-center justify-center w-fit px-2 py-2 gap-2 rounded-full border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 drop-shadow-xl hover:gap-6 transition-all duration-500'>
+        <FooterIcon iconName='mail' link='mailto:shaneyok72@gmail.com'/>
+        <FooterIcon iconName='github' link='https://github.com/ShaneYokota72'/>
+        <FooterIcon iconName='linkedin' link='https://www.linkedin.com/in/shaneyok/'/>
+        <FooterIcon iconName='calendly' link='https://calendly.com/shaneyok/30min'/>
+      </div>
     </div>
   )
 }
