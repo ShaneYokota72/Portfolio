@@ -32,14 +32,34 @@ export default function Home() {
         <p className='text-light-grey dark:text-extra-light-grey'>
           I'm a Junior at the University of Southern California majoring in Computer Science✌️.
           
-          I'm also working with Keepsake, a startup that aims to redefines the estate planning experience for both attorneys and clients.
-          
+          I love making things that make our life easier with my software engineering skills.   
+                 
           In my free time, I enjoy visiting new places, attending hackathons, and hiking.
         </p>
       </Sections>
       
       <Sections title='Work Experience'>
         <div className='flex flex-col gap-3'>
+          <WorkExperience 
+            imgSrc="/USCLogo.png" 
+            companyName="University of Southern California" 
+            position="Undergraduate Researcher(Network Reconnaissance Lab)" 
+            details={
+              <p>
+                Researching in Network Reconnaissance Lab under Dr. Corey Baker
+                <br/>
+                Some work can be found {" "}
+                <Link href="https://github.com/netreconlab" className='underline items-center inline-flex'>
+                  <span>here</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-arrow-up-right mt-1" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                  </svg>
+                </Link>
+              </p>
+            }
+            startDate="Sep 2024" 
+            endDate="Present"
+          />
           <WorkExperience 
             imgSrc="/USCLogo.png" 
             companyName="University of Southern California" 
@@ -51,7 +71,7 @@ export default function Home() {
                 - Hosting weekly office hours to support students in Computer Systems fundamentals.
               </p>
             }
-            startDate="Oct 2024" 
+            startDate="Aug 2024" 
             endDate="Present"
           />
           <WorkExperience 
@@ -67,7 +87,7 @@ export default function Home() {
               </p>
             }
             startDate="Sep 2023" 
-            endDate="Present"
+            endDate="Sep 2024"
           />
           <WorkExperience 
             imgSrc="/EzreadLogo.jpeg" 
@@ -123,20 +143,20 @@ export default function Home() {
       <Sections title='Education'>
         <div className='flex flex-col gap-3'>
           <Education 
-            imgSrc="/BuildspaceLogo.jpg" 
-            companyName="Buildspace" 
-            details="s5" 
-            startDate="Jun 2024" 
-            endDate="Aug 2024"
-            redirectLink="https://buildspace.so/"
-          />
-          <Education 
             imgSrc="/USCLogo.png" 
             companyName="University of Southern California" 
             details="Bachelor of Science in Computer Science" 
             startDate="Aug 2022" 
             endDate="May 2026"
             redirectLink="https://www.cs.usc.edu/"
+          />
+          <Education 
+            imgSrc="/BuildspaceLogo.jpg" 
+            companyName="Buildspace" 
+            details="s5" 
+            startDate="Jun 2024" 
+            endDate="Aug 2024"
+            redirectLink="https://buildspace.so/"
           />
         </div>
       </Sections>
