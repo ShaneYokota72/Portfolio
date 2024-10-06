@@ -46,7 +46,8 @@ export const projectArray: Project[] = [
         image: "/Devmesh.jpg",
         links: {
             'Github': "https://github.com/ShaneYokota72/DevMesh-FrontEnd",
-            'Website': "https://devmesh.vercel.app/"
+            'Website': "https://devmesh.vercel.app/",
+            'YouTube': "https://youtu.be/-ppDyhM1jH8"
         },
     },
     {

@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React from 'react'
-import { Globe, Github, Chrome, Figma } from 'lucide-react';
+import { Globe, Github, Chrome, Figma, Youtube } from 'lucide-react';
 
 interface TagProps {
     tag: string
@@ -19,6 +19,8 @@ export default function Tag({
                 return <Figma size={16} className='fill-white dark:fill-black'/>;
             case 'Chrome Web Store':
                 return <Chrome size={16} className='fill-white dark:fill-black'/>;
+            case 'YouTube':
+                return <Youtube size={16} className='fill-white dark:fill-black'/>;
             default:
                 return <Globe size={16} className='fill-white dark:fill-black'/>;;
         }
@@ -33,7 +35,7 @@ export default function Tag({
             )}
         >
             {typeof onClick === 'function' && getIcon(tag)}
-            <p className='w-fit text-white dark:text-[#111010] font-medium text-sm'>{tag}</p>
+            <p className='w-fit text-white dark:text-[#111010] font-medium text-sm'>{tag !== 'YouTube' ? tag : 'Demo'}</p>
         </div>
     )
 }
