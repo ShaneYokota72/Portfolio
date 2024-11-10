@@ -20,7 +20,8 @@ export const projectArray: Project[] = [
         description: ["One click job application tracker(Chrome extension)."],
         image: "/TacerProject.png",
         links: {
-            'Chrome Web Store': "https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf"
+            'Chrome Web Store': "https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf",
+            'Website': "https://tacer.vercel.app/",
         }
     },
     {
