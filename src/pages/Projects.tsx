@@ -14,15 +14,14 @@ export default function Projects() {
                 <div className='flex flex-wrap gap-4 mt-4'>
                 {
                     projectArray.slice(0,projectNumber).map((project, i) => (
-                    <Project
-                        key={i}
-                        name={project.name}
-                        date={project.date}
-                        description={project.description}
-                        image={project.image}
-                        links={project.links}
-                        colors={project.colors}
-                    />
+                        <Project
+                            key={i}
+                            name={project.name}
+                            date={project.date}
+                            description={project.description}
+                            image={project.image}
+                            links={project.links}
+                        />
                     ))
                 }
                 </div>
