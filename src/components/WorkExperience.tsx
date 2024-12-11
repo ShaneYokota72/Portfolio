@@ -32,7 +32,10 @@ export default function WorkExperience({
                     onClick={() => setExpanded(!expanded)}
                 >
                     <p className='font-semibold'>{companyName}</p>
-                    <ChevronRight className='w-4 h-4 ml-1 opacity-0 -translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0' />
+                    <ChevronRight className={clsx(
+                        'w-4 h-4 ml-1 opacity-0 -translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0',
+                        expanded ? 'rotate-90 opacity-100 translate-x-0' : ''
+                    )} />
                 </div>
                     <p className='font-extralight '>{position}</p>
                     <div
