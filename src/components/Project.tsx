@@ -6,13 +6,34 @@ import { Project as ProjectProps } from '@/util/projectData'
 import Tag from './Tag'
 import clsx from 'clsx'
 
+const HIGH_LIGHT_COLORS:Record<string, string> = {
+    'Tacer': 'via-purple-800',
+    'Tinker': 'via-green-800',
+    'Med2Meals': 'via-rose-800',
+    'DevMesh': 'via-yellow-800',
+    'CareerChain': 'via-slate-600',
+}
+const HIGH_LIGHT_BOTTOM_MAIN_COLORS:Record<string, string> = {
+    'Tacer': 'via-purple-800',
+    'Tinker': 'via-green-800',
+    'Med2Meals': 'via-rose-800',
+    'DevMesh': 'via-yellow-800',
+    'CareerChain': 'via-slate-600',
+}
+const HIGH_LIGHT_BOTTOM_SUB_COLORS:Record<string, string> = {
+    'Tacer': 'group-hover:via-purple-500',
+    'Tinker': 'group-hover:via-green-500',
+    'Med2Meals': 'group-hover:via-rose-500',
+    'DevMesh': 'group-hover:via-yellow-500',
+    'CareerChain': 'group-hover:via-slate-500',
+}
+
 export default function Project({
     name,
     date,
     description,
     image,
     links,
-    colors,
 }: ProjectProps) {
     const router = useRouter()
     return (
@@ -43,8 +64,8 @@ export default function Project({
                 </div>
             </div>
 
-            <div className={clsx("h-2 w-full bg-gradient-to-l from-transparent to-transparent group-hover:blur-xl blur-3xl m-auto rounded transition-all absolute bottom-0", colors?.[0])}></div>
-            <div className={clsx('w-[70%] h-0.5 left-0 right-0 mx-auto group-hover:w-full bg-gradient-to-l from-transparent to-transparent rounded transition-all absolute bottom-0', colors?.[1], colors?.[2])}/>
+            <div className={clsx("h-2 w-full bg-gradient-to-l from-transparent to-transparent group-hover:blur-xl blur-3xl m-auto rounded transition-all absolute bottom-0", HIGH_LIGHT_COLORS[name])}></div>
+            <div className={clsx('w-[70%] h-0.5 left-0 right-0 mx-auto group-hover:w-full bg-gradient-to-l from-transparent to-transparent rounded transition-all absolute bottom-0', HIGH_LIGHT_BOTTOM_MAIN_COLORS[name], HIGH_LIGHT_BOTTOM_SUB_COLORS[name])}/>
         </div>
     )
 }

@@ -4,7 +4,6 @@ export interface Project {
     description: string[];
     image: string;
     links: Record<string, string>;
-    colors?: string[];
 }
 
 export const projectArray: Project[] = [
@@ -17,7 +16,6 @@ export const projectArray: Project[] = [
             'Chrome Web Store': "https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf",
             'Website': "https://tacer.vercel.app/",
         },
-        colors: ["via-purple-800", "via-purple-800", "group-hover:via-purple-500"]
     },
     {
         name: "Tinker",
@@ -27,7 +25,6 @@ export const projectArray: Project[] = [
         links: {
             'Pitch Deck': "https://www.figma.com/proto/IvQxyZJCGeXyFHwF3luDuc/Lava-Decks?node-id=545-10575&node-type=canvas&t=oziPgY4thpZfrjCW-1&scaling=contain&content-scaling=fixed&page-id=545%3A10574&starting-point-node-id=545%3A10575"
         },
-        colors: ["via-green-800", "via-green-800", "group-hover:via-green-500"]
     },
     {
         name: "DevMesh",
@@ -39,7 +36,6 @@ export const projectArray: Project[] = [
             'Website': "https://devmesh.vercel.app/",
             'YouTube': "https://youtu.be/-ppDyhM1jH8"
         },
-        colors: ["via-yellow-800", "via-yellow-800", "group-hover:via-yellow-500"]
     },
     {
         name: "Med2Meals",
@@ -50,7 +46,6 @@ export const projectArray: Project[] = [
             'Github': "https://github.com/ShaneYokota72/Med2Meals",
             'Devpost': "https://devpost.com/software/nourish-connect"
         },
-        colors: ["via-rose-800", "via-rose-800", "group-hover:via-rose-500"]
     },
     {
         name: "CareerChain",
@@ -60,7 +55,6 @@ export const projectArray: Project[] = [
         links: {
             'Devpost': "https://devpost.com/software/nourish-connect"
         },
-        colors: ["via-slate-800", "via-slate-800", "group-hover:via-slate-500"]
     },
     // {
     //     name: "Task-Clear",

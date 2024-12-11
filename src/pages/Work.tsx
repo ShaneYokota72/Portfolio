@@ -48,6 +48,9 @@ export default function Work() {
             details={
                 <p>
                     Provided guidance, support, and mentorship for the new LavaLab cohort developers.
+                    <br/>
+                    <br/>
+                    Helped my team build Glance, a desktop app for progress update to help teams stay aligned. - 🏆 Won Best Pitch Award at LavaLab F24 Demo Night
                 </p>
             }
             startDate="Sep 2024" 
@@ -77,7 +80,7 @@ export default function Work() {
                     Built Tinker, a mobile app simplifying property management for landlords, using React Native, Express.js, and Claude API.
                     <br/>
                     <br/>
-                    Won Best Pitch Award at LavaLab S24 Demo Night
+                    🏆 Won Best Pitch Award at LavaLab S24 Demo Night
                 </p>
             }
             startDate="Feb 2024" 
