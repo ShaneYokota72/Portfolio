@@ -40,7 +40,7 @@ export const projectArray: Project[] = [
     {
         name: "Med2Meals",
         date: "Feb 2024",
-        description: ["Service linking users with local chefs for personalized, health-focused meals.", "🏆1st place CrossMint Prize @ TreeHacks24."],
+        description: ["Service linking users with local chefs for personalized, health-focused meals.", "🏆 1st place CrossMint Prize @ TreeHacks24."],
         image: "/Med2MealsProject.jpg",
         links: {
             'Github': "https://github.com/ShaneYokota72/Med2Meals",
@@ -50,7 +50,7 @@ export const projectArray: Project[] = [
     {
         name: "CareerChain",
         date: "Oct 2023",
-        description: ["Blockchain-based hiring platform reducing work for recruiters.", "🏆Best Use of XRP Ledger Prize @ Cal Hacks 10.0."],
+        description: ["Blockchain-based hiring platform reducing work for recruiters.", "🏆 Best Use of XRP Ledger Prize @ Cal Hacks 10.0."],
         image: "/CareerChain.png",
         links: {
             'Devpost': "https://devpost.com/software/nourish-connect"

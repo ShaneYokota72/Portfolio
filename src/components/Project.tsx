@@ -37,7 +37,7 @@ export default function Project({
 }: ProjectProps) {
     const router = useRouter()
     return (
-        <div className='relative w-full sm:w-[calc(50%-16px)] flex flex-col rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 overflow-hidden m-1 group hover:brightness-105'>
+        <div className='relative w-full sm:w-[calc(50%-16px)] flex flex-col rounded-lg border border-neutral-700 bg-neutral-800 overflow-hidden m-1 group hover:brightness-105'>
             <Image 
                 src={image} 
                 width={440} 
