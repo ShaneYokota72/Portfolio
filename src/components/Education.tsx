@@ -25,7 +25,7 @@ export default function Education({
     return (
         <div className='flex justify-between items-start [&_p]:text-sm transform'>
             <div className='flex gap-4 items-start'>
-                <Image src={imgSrc} width={56} height={56} alt="Company Logo" className='border border-neutral-200 dark:border-neutral-700 p-[2px] w-14 h-14 rounded-full object-cover dark:bg-neutral-200'></Image>
+                <Image src={imgSrc} width={56} height={56} alt="Company Logo" className='border border-neutral-700 p-[2px] w-14 h-14 rounded-full object-cover bg-neutral-200'></Image>
                 <div className='flex flex-col mt-2'>
                 <div 
                     className='flex items-center cursor-pointer group'
