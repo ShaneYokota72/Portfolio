@@ -8,7 +8,7 @@ export default function Work() {
     <Sections title='Work Experience'>
         <div className='flex flex-col gap-3'>
         <WorkExperience 
-            imgSrc="/Paraform.png" 
+            imgSrc="/Paraform.jpeg" 
             companyName="Paraform" 
             position="Software Engineer Intern" 
             details={
@@ -20,20 +20,15 @@ export default function Work() {
             endDate="Present"
         />
         <WorkExperience 
-            imgSrc="/USCLogo.png" 
-            companyName="University of Southern California" 
-            position="Undergraduate Researcher(Network Reconnaissance Lab)" 
+            imgSrc="/LavaLab.jpg" 
+            companyName="LavaLab" 
+            position="Developer Mentor" 
             details={
                 <p>
-                    Researching in Network Reconnaissance Lab under Dr. Corey Baker
+                    Provided guidance, support, and mentorship for the new LavaLab cohort developers.
                     <br/>
-                    Some work can be found {" "}
-                    <Link href="https://github.com/netreconlab" className='underline items-center inline-flex'>
-                        <span>here</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-arrow-up-right mt-1" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
-                        </svg>
-                    </Link>
+                    <br/>
+                    Helped my team build Glance, a desktop app for progress update to help teams stay aligned. - 🏆 Won Best Pitch Award at LavaLab F24 Demo Night
                 </p>
             }
             startDate="Sep 2024" 
@@ -54,15 +49,20 @@ export default function Work() {
             endDate="Present"
         />
         <WorkExperience 
-            imgSrc="/LavaLab.jpg" 
-            companyName="LavaLab" 
-            position="Developer Mentor" 
+            imgSrc="/USCLogo.png" 
+            companyName="University of Southern California" 
+            position="Undergraduate Researcher(Network Reconnaissance Lab)" 
             details={
                 <p>
-                    Provided guidance, support, and mentorship for the new LavaLab cohort developers.
+                    Researching in Network Reconnaissance Lab under Dr. Corey Baker
                     <br/>
-                    <br/>
-                    Helped my team build Glance, a desktop app for progress update to help teams stay aligned. - 🏆 Won Best Pitch Award at LavaLab F24 Demo Night
+                    Some work can be found {" "}
+                    <Link href="https://github.com/netreconlab" className='underline items-center inline-flex'>
+                        <span>here</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-arrow-up-right mt-1" viewBox="0 0 16 16">
+                            <path fillRule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                        </svg>
+                    </Link>
                 </p>
             }
             startDate="Sep 2024" 
