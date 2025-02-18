@@ -18,6 +18,16 @@ export const projectArray: Project[] = [
         },
     },
     {
+        name: "Lumora",
+        date: "Feb 2025",
+        description: ["Your AI-Powered Collaboration Hub", "🏆 Most Creative Use of Vercel/v0 in Edge AI track prize @ Treehacks25."],
+        image: "/Lumora.png",
+        links: {
+            'Github': "https://github.com/ShaneYokota72/Lumora",
+            'Devpost': "https://devpost.com/software/lumora"
+        },
+    },
+    {
         name: "Tinker",
         date: "Feb 2024 - May 2024",
         description: ["Mobile app simplifying property management for landlords."],
@@ -56,37 +66,4 @@ export const projectArray: Project[] = [
             'Devpost': "https://devpost.com/software/nourish-connect"
         },
     },
-    // {
-    //     name: "Task-Clear",
-    //     date: "",
-    //     description: ["This is to-do app with several other features that helps the user clear out their task faster and more efficiently"],
-    //     image: "/taskclear.jpg",
-    //     links: {
-    //         'Github': "https://github.com/ShaneYokota72/task.clear",
-    //         'Website': ""
-    //     },
-    //     colors: ["", "", ""]
-    // },
-    // {
-    //     name: "Sports Betting Helper",
-    //     date: "",
-    //     description: ["This program helps users with sports betting after analyzing the past game statistics"],
-    //     image: "/sportsbetting.jpeg",
-    //     links: {
-    //         'Github': "",
-    //         'Website': ""
-    //     },
-    //     colors: ["", "", ""]
-    // },
-    // {
-    //     name: "Number Scan",
-    //     date: "",
-    //     description: ["This is a numberscanner, which is a program that is able to detect and recognize the numbers in images just like when you scan a giftcard!"],
-    //     image: "/NumScanImage.jpg",
-    //     links: {
-    //         'Github': "",
-    //         'Website': ""
-    //     },
-    //     colors: ["", "", ""]
-    // }
 ]

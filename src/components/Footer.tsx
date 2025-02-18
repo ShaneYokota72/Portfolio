@@ -9,6 +9,7 @@ export default function Footer() {
         <FooterIcon iconName='mail' link='mailto:shaneyok72@gmail.com'/>
         <FooterIcon iconName='github' link='https://github.com/ShaneYokota72'/>
         <FooterIcon iconName='linkedin' link='https://www.linkedin.com/in/shaneyok/'/>
+        <FooterIcon iconName='twitter' link='https://x.com/shaneyok72'/>
         <FooterIcon iconName='calendly' link='https://calendly.com/shaneyok/30min'/>
       </div>
     </div>
