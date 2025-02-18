@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='text-white bg-[#111010]'>
+    <html lang="en" className='text-white bg-[#111010] scroll-smooth'>
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>

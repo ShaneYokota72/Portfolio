@@ -8,6 +8,18 @@ export default function Work() {
     <Sections title='Work Experience'>
         <div className='flex flex-col gap-3'>
         <WorkExperience 
+            imgSrc="/LinkedInLogo.png" 
+            companyName="Linkedin" 
+            position="Incoming Software Engineer Intern" 
+            details={
+                <p>
+                    Incoming Software Engineer Intern @ LinkedIn.
+                </p>
+            }
+            startDate="Jan 2025" 
+            endDate=" Present"
+        />
+        <WorkExperience 
             imgSrc="/Paraform.jpeg" 
             companyName="Paraform" 
             position="Software Engineer Intern" 
