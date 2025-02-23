@@ -21,6 +21,7 @@ export default function Projects() {
                             description={project.description}
                             image={project.image}
                             links={project.links}
+                            productHuntEmbed={project.productHuntEmbed}
                         />
                     ))
                 }

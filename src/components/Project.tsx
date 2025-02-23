@@ -37,6 +37,7 @@ export default function Project({
     description,
     image,
     links,
+    productHuntEmbed,
 }: ProjectProps) {
     const router = useRouter()
     return (
@@ -60,6 +61,12 @@ export default function Project({
                         ))}
                     </div>
                 </div>
+                {productHuntEmbed && (
+                    <div 
+                        className="pt-4" 
+                        dangerouslySetInnerHTML={{ __html: productHuntEmbed }}
+                    />
+                )}
                 <div className='flex gap-2 mt-4'>
                     {Object.entries(links).map(([key, value]) => (
                         <Tag key={key} tag={key} onClick={() => {router.push(value)}} />

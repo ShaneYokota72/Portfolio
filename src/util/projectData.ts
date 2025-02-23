@@ -4,6 +4,7 @@ export interface Project {
     description: string[];
     image: string;
     links: Record<string, string>;
+    productHuntEmbed?: string;
 }
 
 export const projectArray: Project[] = [
@@ -16,6 +17,7 @@ export const projectArray: Project[] = [
             'Chrome Web Store': "https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf",
             'Website': "https://tacer.vercel.app/",
         },
+        productHuntEmbed: '<a href="https://www.producthunt.com/posts/tacer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tacer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=907683&theme=light&t=1740309181022" alt="Tacer - One&#0032;click&#0032;job&#0032;application&#0032;tracker&#0033; | Product Hunt" style="width: 195px; height: 42px;" width="195" height="42" /></a>'
     },
     {
         name: "Lumora",
