@@ -20,18 +20,6 @@ export default function Work() {
             endDate=" Present"
         />
         <WorkExperience 
-            imgSrc="/Paraform.jpeg" 
-            companyName="Paraform" 
-            position="Software Engineer Intern" 
-            details={
-                <p>
-                    Building growth tools for Paraform.
-                </p>
-            }
-            startDate="Dec 2024" 
-            endDate="Present"
-        />
-        <WorkExperience 
             imgSrc="/LavaLab.jpg" 
             companyName="LavaLab" 
             position="Developer Mentor" 
@@ -61,12 +49,24 @@ export default function Work() {
             endDate="Present"
         />
         <WorkExperience 
+            imgSrc="/Paraform.jpeg" 
+            companyName="Paraform" 
+            position="Software Engineer Intern" 
+            details={
+                <p>
+                    Built growth tools for Paraform.
+                </p>
+            }
+            startDate="Dec 2024" 
+            endDate="Feb 2025"
+        />
+        <WorkExperience 
             imgSrc="/USCLogo.png" 
             companyName="University of Southern California" 
             position="Undergraduate Researcher(Network Reconnaissance Lab)" 
             details={
                 <p>
-                    Researching in Network Reconnaissance Lab under Dr. Corey Baker
+                    Researched in Network Reconnaissance Lab under Dr. Corey Baker
                     <br/>
                     Some work can be found {" "}
                     <Link href="https://github.com/netreconlab" className='underline items-center inline-flex'>
@@ -86,10 +86,10 @@ export default function Work() {
             position="Software Developer"
             details={
                 <p>
-                    Architecting the core technology behind Keepsake, a modern estate planning platform that redefines the experience for attorneys and their clients, using Next.js/TypeScript and MongoDB. 
+                    Architected the core technology behind Keepsake, a modern estate planning platform that redefines the experience for attorneys and their clients, using Next.js/TypeScript and MongoDB. 
                     <br/>
                     <br/>
-                    Contributing to new feature development like user dashboard, account sharing, and more, while collaborating with a team of 4 engineers to continuously deliver updates, bug fixes, and enhancements.
+                    Contributed to new feature development like user dashboard, account sharing, and more, while collaborating with a team of 4 engineers to continuously deliver updates, bug fixes, and enhancements.
                 </p>
             }
             startDate="Sep 2023" 
