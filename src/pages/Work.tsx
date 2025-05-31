@@ -10,13 +10,13 @@ export default function Work() {
         <WorkExperience 
             imgSrc="/LinkedInLogo.png" 
             companyName="Linkedin" 
-            position="Incoming Software Engineer Intern" 
+            position="Software Engineer Intern" 
             details={
                 <p>
-                    Incoming Software Engineer Intern @ LinkedIn.
+                    Product Engineering (Online Jobs)
                 </p>
             }
-            startDate="Jan 2025" 
+            startDate="May 2025" 
             endDate=" Present"
         />
         <WorkExperience 
