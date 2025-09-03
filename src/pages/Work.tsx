@@ -8,6 +8,18 @@ export default function Work() {
     <Sections title='Work Experience'>
         <div className='flex flex-col gap-3'>
         <WorkExperience 
+            imgSrc="/ShopifyLogo.png" 
+            companyName="Shopify" 
+            position="Software Engineer (Contract)" 
+            details={
+                <p>
+                    Shopify Shop Mini (Trend Off)
+                </p>
+            }
+            startDate="Aug 2025" 
+            endDate=" Present"
+        />
+        <WorkExperience 
             imgSrc="/LinkedInLogo.png" 
             companyName="Linkedin" 
             position="Software Engineer Intern" 
@@ -17,7 +29,7 @@ export default function Work() {
                 </p>
             }
             startDate="May 2025" 
-            endDate=" Present"
+            endDate=" Aug 2025"
         />
         <WorkExperience 
             imgSrc="/LavaLab.jpg" 
@@ -32,7 +44,7 @@ export default function Work() {
                 </p>
             }
             startDate="Sep 2024" 
-            endDate="Present"
+            endDate="May 2025"
         />
         <WorkExperience 
             imgSrc="/USCLogo.png" 
@@ -46,7 +58,7 @@ export default function Work() {
                 </p>
             }
             startDate="Aug 2024" 
-            endDate="Present"
+            endDate="May 2025"
         />
         <WorkExperience 
             imgSrc="/Paraform.jpeg" 

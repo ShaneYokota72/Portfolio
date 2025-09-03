@@ -20,6 +20,23 @@ export const projectArray: Project[] = [
         // productHuntEmbed: '<a href="https://www.producthunt.com/posts/tacer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tacer" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=907683&theme=light&t=1740309181022" alt="Tacer - One&#0032;click&#0032;job&#0032;application&#0032;tracker&#0033; | Product Hunt" style="width: 195px; height: 42px;" width="195" height="42" /></a>'
     },
     {
+        name: "Trend Off",
+        date: "Aug 2025",
+        description: ["Daily trend-oriented game for engagement and friendly competition.", "🏆 Grand Prize/1st Prize @ Shopify Shop Minis Hackaton SF."],
+        image: "/TrendOff.png",
+        links: {},
+    },
+    {
+        name: "Octavo",
+        date: "Jun 2025",
+        description: ["A human-centered search engine powered by memory agents.", "🏆 Best Use of Orkes Prize @ UC Berkeley AI Hackathon 2025."],
+        image: "/Octavo.png",
+        links: {
+            'Github': "https://github.com/gnahCnayR/octavo",
+            'Devpost': "https://devpost.com/software/octopus-pzv5l0"
+        },
+    },
+    {
         name: "Lumora",
         date: "Feb 2025",
         description: ["Your AI-Powered Collaboration Hub", "🏆 Most Creative Use of Vercel/v0 in Edge AI track prize @ Treehacks25."],

@@ -8,6 +8,8 @@ import clsx from 'clsx'
 
 const HIGH_LIGHT_COLORS:Record<string, string> = {
     'Tacer': 'via-purple-800',
+    'Trend Off': 'via-[#5432EB]',
+    'Octavo': 'via-[#FF6D28]',
     'Lumora': 'via-blue-800',
     'Tinker': 'via-green-800',
     'Med2Meals': 'via-rose-800',
@@ -16,6 +18,8 @@ const HIGH_LIGHT_COLORS:Record<string, string> = {
 }
 const HIGH_LIGHT_BOTTOM_MAIN_COLORS:Record<string, string> = {
     'Tacer': 'via-purple-800',
+    'Trend Off': 'via-[#5432EB]',
+    'Octavo': 'via-[#FF6D28]',
     'Lumora': 'via-blue-800',
     'Tinker': 'via-green-800',
     'Med2Meals': 'via-rose-800',
@@ -24,6 +28,8 @@ const HIGH_LIGHT_BOTTOM_MAIN_COLORS:Record<string, string> = {
 }
 const HIGH_LIGHT_BOTTOM_SUB_COLORS:Record<string, string> = {
     'Tacer': 'group-hover:via-purple-500',
+    'Trend Off': 'group-hover:via-[#6F38FF]',
+    'Octavo': 'group-hover:via-[#FF8A50]',
     'Lumora': 'group-hover:via-blue-500',
     'Tinker': 'group-hover:via-green-500',
     'Med2Meals': 'group-hover:via-rose-500',
