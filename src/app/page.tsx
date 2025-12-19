@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
 
       <div className='flex flex-col gap-8'>
+        <p className='text-sm font-mono text-gray-500'> Updated As of Dec 19th, 2025</p>
         <Introduction/>
         <About/>
         <Work/>

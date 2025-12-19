@@ -8,6 +8,30 @@ export default function Work() {
     <Sections title='Work Experience'>
         <div className='flex flex-col gap-3'>
         <WorkExperience 
+            imgSrc="/Unify.png" 
+            companyName="Unify" 
+            position="Software Engineer" 
+            details={
+                <p>
+                    soon
+                </p>
+            }
+            startDate="Starting Jan 2026" 
+            endDate=""
+        />
+        <WorkExperience 
+            imgSrc="/Doublespeed.png" 
+            companyName="DoubleSpeed" 
+            position="Software Engineer (Contract)" 
+            details={
+                <p>
+                    Product + Server Engineering
+                </p>
+            }
+            startDate="Oct 2025" 
+            endDate="Nov 2025"
+        />
+        <WorkExperience 
             imgSrc="/ShopifyLogo.png" 
             companyName="Shopify" 
             position="Software Engineer (Contract)" 
@@ -17,7 +41,7 @@ export default function Work() {
                 </p>
             }
             startDate="Aug 2025" 
-            endDate=" Present"
+            endDate="Oct 2025"
         />
         <WorkExperience 
             imgSrc="/LinkedInLogo.png" 
@@ -29,7 +53,7 @@ export default function Work() {
                 </p>
             }
             startDate="May 2025" 
-            endDate=" Aug 2025"
+            endDate="Aug 2025"
         />
         <WorkExperience 
             imgSrc="/LavaLab.jpg" 
@@ -49,7 +73,7 @@ export default function Work() {
         <WorkExperience 
             imgSrc="/USCLogo.png" 
             companyName="University of Southern California" 
-            position="Undergraduate Teaching Assistant(CS 356 - Computer Systems)" 
+            position="Undergraduate Teaching Assistant (CS 356 - Computer Systems)" 
             details={
                 <p>
                     Course Producer for CSCI 356: Computer Systems
@@ -75,7 +99,7 @@ export default function Work() {
         <WorkExperience 
             imgSrc="/USCLogo.png" 
             companyName="University of Southern California" 
-            position="Undergraduate Researcher(Network Reconnaissance Lab)" 
+            position="Undergraduate Researcher (Network Reconnaissance Lab)" 
             details={
                 <p>
                     Researched in Network Reconnaissance Lab under Dr. Corey Baker
