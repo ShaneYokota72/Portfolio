@@ -13,11 +13,13 @@ export default function Work() {
             position="Software Engineer" 
             details={
                 <p>
-                    soon
+                    Jan: Product Team
+                    <br/>
+                    Feb - Present: Tiger Team (Tackling High Priority Issues)
                 </p>
             }
-            startDate="Starting Jan 2026" 
-            endDate=""
+            startDate="Jan 2026" 
+            endDate="Present"
         />
         <WorkExperience 
             imgSrc="/Doublespeed.png" 
